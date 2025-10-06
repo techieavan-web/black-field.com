@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Black Field Properties</title>
+  <link rel="stylesheet" href="style.css"> <!-- Your site-wide CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gold {
+      color: #d4af37;
+    }
+
+    .gold-bg {
+      background-color: #d4af37;
+    }
+
+    .site-header {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .site-header .navbar li a {
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .site-header .navbar li a:hover {
+      color: #d4af37;
+    }
+
+    .site-header .navbar li a.active {
+      color: #d4af37 !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="logo-container">
+      <a href="index.html">
+        <img class="logo" alt="Black Field Properties" src="logo.png">
+      </a>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html">Listings</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active" >About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[90vh] flex items-center justify-center text-center">
+    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg" alt="Luxury Dubai Skyline"
+      class="absolute w-full h-full object-cover opacity-60">
+    <div class="relative z-10 mt-20">
+      <h1 class="text-5xl md:text-6xl font-extrabold gold">About Us</h1>
+      <p class="mt-4 text-xl text-gray-200">Elevating Real Estate Standards in Dubai</p>
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-3xl font-bold gold mb-4">Our Mission</h3>
+        <p class="text-gray-300">
+          We architect your success in Dubai and beyond, delivering exponential returns through strategic investments
+          and an unwavering commitment to your satisfaction.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-3xl font-bold gold mb-4">Our Vision</h3>
+        <p class="text-gray-300">
+          Empowering your ambitions, multiplying your future through exceptional real estate investments worldwide.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values as Cards -->
+  <section class="relative py-20 bg-black">
+    <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" alt="Luxury Interior"
+      class="absolute w-full h-full object-cover opacity-20">
+    <div class="relative max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center gold mb-12">Our Values</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <div
+          class="bg-gray-900 rounded-2xl shadow-xl p-8 text-center border border-gray-800 hover:border-[#d4af37] hover:scale-105 transition transform">
+          <h4 class="text-xl font-semibold gold mb-3">Integrity</h4>
+          <p class="text-gray-300">Honesty and transparency in every interaction.</p>
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-2xl shadow-xl p-8 text-center border border-gray-800 hover:border-[#d4af37] hover:scale-105 transition transform">
+          <h4 class="text-xl font-semibold gold mb-3">Excellence</h4>
+          <p class="text-gray-300">Commitment to superior service and outcomes.</p>
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-2xl shadow-xl p-8 text-center border border-gray-800 hover:border-[#d4af37] hover:scale-105 transition transform">
+          <h4 class="text-xl font-semibold gold mb-3">Discretion</h4>
+          <p class="text-gray-300">Respecting privacy in high-profile transactions.</p>
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-2xl shadow-xl p-8 text-center border border-gray-800 hover:border-[#d4af37] hover:scale-105 transition transform">
+          <h4 class="text-xl font-semibold gold mb-3">Innovation</h4>
+          <p class="text-gray-300">Modern tools and strategies for a competitive edge.</p>
+        </div>
+
+        <div
+          class="bg-gray-900 rounded-2xl shadow-xl p-8 text-center border border-gray-800 hover:border-[#d4af37] hover:scale-105 transition transform">
+          <h4 class="text-xl font-semibold gold mb-3">Client-First</h4>
+          <p class="text-gray-300">Personalized solutions tailored to individual needs.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center gold mb-12">Meet the Team</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <div class="text-center hover:scale-105 transition">
+        <img src="ahmed.png" alt="Ahmad Lootah"
+          class="mx-auto rounded-2xl shadow-lg w-72 h-72 object-cover mb-4 border-4 border-[#d4af37]">
+        <h4 class="font-bold text-lg gold">Ahmad Lootah</h4>
+        <p class="text-gray-400">Chairman</p>
+      </div>
+      <div class="text-center hover:scale-105 transition">
+        <img src="dhai.png" alt="Dhahi Lootah"
+          class="mx-auto rounded-2xl shadow-lg w-72 h-72 object-cover mb-4 border-4 border-[#d4af37]">
+        <h4 class="font-bold text-lg gold">Dhahi Lootah</h4>
+        <p class="text-gray-400">Managing Director</p>
+      </div>
+      <div class="text-center hover:scale-105 transition">
+        <img src="hemant.png" alt="Hemant Pawar"
+          class="mx-auto rounded-2xl shadow-lg w-72 h-72 object-cover mb-4 border-4 border-[#d4af37]">
+        <h4 class="font-bold text-lg gold">Hemant Pawar</h4>
+        <p class="text-gray-400">Director</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats with Animation -->
+  <section class="py-20 bg-gradient-to-r from-black to-gray-900 text-center">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div>
+        <p class="text-5xl font-extrabold gold counter" data-target="100" data-suffix="M">$0</p>
+        <p class="mt-2 text-gray-300">Current Listing Volume</p>
+      </div>
+      <div>
+        <p class="text-5xl font-extrabold gold counter" data-target="400" data-suffix="M">$0</p>
+        <p class="mt-2 text-gray-300">Total Sold 2020 - 2022</p>
+      </div>
+      <div>
+        <p class="text-5xl font-extrabold gold counter" data-target="2" data-suffix="B+">$0</p>
+        <p class="mt-2 text-gray-300">Lifetime Sales Volume</p>
+      </div>
+    </div>
+    <p class="text-center mt-10 text-gray-400 max-w-2xl mx-auto">
+      Despite well over $1 billion in combined sales, the team strives to maintain an air of humility and discretion.
+    </p>
+  </section>
+
+  <!-- Counter Animation Script -->
+  <script>
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200;
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        const suffix = counter.getAttribute('data-suffix') || "";
+        let count = 0;
+
+        const updateCount = () => {
+          const increment = target / speed;
+          if (count < target) {
+            count += increment;
+            counter.innerText = "$" + Math.ceil(count) + suffix;
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = "$" + target.toLocaleString() + suffix;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    const statsSection = document.querySelector("section:nth-of-type(5)");
+    let started = false;
+    window.addEventListener("scroll", () => {
+      const sectionTop = statsSection.getBoundingClientRect().top;
+      if (sectionTop < window.innerHeight && !started) {
+        animateCounters();
+        started = true;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
